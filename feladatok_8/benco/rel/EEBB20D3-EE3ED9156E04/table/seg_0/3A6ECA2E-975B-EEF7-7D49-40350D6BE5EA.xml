@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3A6ECA2E-975B-EEF7-7D49-40350D6BE5EA" name="ERTEKELES">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:54:45 UTC</createdTime>
+<generatorID>BD9FB6C9-2B7F-77B2-6A39-A4BCC9012CC1</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TANFKOD" id="57CEF0C3-8384-9988-0997-79959295325F">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:54:45 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BEB189E-F456-C168-F079-4251FFEC3E38" referredColumn="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</associations>
+</Column>
+<Column name="TEMAKOR" id="9992C2B2-E088-2120-D665-A1E6D9A41053">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:55:48 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DARAB" id="84ECB313-F4E9-FCE7-8096-DE1FC703212B">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:55:48 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATLAG" id="42206209-0FEF-E44E-B36C-FE90F4B72BFD">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:55:48 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>76A6101A-B736-7725-5EA2-000C90A405DE</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6225CD88-2EE9-6C0A-9BE5-A1F9BD3D2BDF" name="ERTEKELES_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:54:45 UTC</createdTime>
+<generatorID>B762ED9F-9BCC-F3C0-72AA-955568B44347</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57CEF0C3-8384-9988-0997-79959295325F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

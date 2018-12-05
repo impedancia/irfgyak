@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C18B27A2-65F2-A4F8-B71D-85661D579998" containerWithKeyObject="0A9EA75E-E69C-C8C4-323C-625EC9C9F5D7" localFKIndex="77CBB688-1F83-9C05-FA15-CDC1E6F859CE" name="OKTATOTANFOLYAM_OKTATO_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<generatorID>1CBA6020-3733-3192-911E-7D81EFCDEEC4</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>OKTATO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17C198B3-D3C6-F04E-5F33-A53A9247FACB</referredTableID>
+<keyObject>3A1107FE-476A-51A7-DB92-8D4247DE53B4</keyObject>
+<referredKeyID>3A1107FE-476A-51A7-DB92-8D4247DE53B4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>OKTATOKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="08F995CB-14F7-5132-4FD5-699108A6604E" containerWithKeyObject="0A486359-CCCA-8D99-14FE-385ADEC622EF" localFKIndex="EB52F56B-E7D5-C05B-97A0-256061F6126F" name="FOGLALAS_UGYFEL_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>3B9769A8-A81E-EAAB-05D2-C2CD39522D5A</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>UGYFEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DFFE33D8-2320-0293-63AE-7067F4E3AB5E</referredTableID>
+<keyObject>19857EC3-2750-D489-B765-68648C6E597B</keyObject>
+<referredKeyID>19857EC3-2750-D489-B765-68648C6E597B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>UGYFEL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

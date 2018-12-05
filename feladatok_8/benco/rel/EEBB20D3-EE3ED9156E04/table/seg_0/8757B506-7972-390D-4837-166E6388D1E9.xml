@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8757B506-7972-390D-4837-166E6388D1E9" name="TTIPUS">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>B9C3D50D-163B-7864-DF0D-1EA74A0DB013</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPUSKOD" id="B8FC3742-678A-439B-D504-2C9CBEF1806F">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="TIPUSNEV" id="DBFAB073-A1AF-0A58-93D0-05DEBAF473D7">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:34:03 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINLETSZAM" id="C1664719-C6C0-D924-1082-FE3E56DC80E0">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:34:03 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXLETSZAM" id="74EE0F89-0662-E48A-A201-28DEF965CCF6">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:34:03 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AR" id="3C26B227-8271-194C-1091-04F11A7C2231">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANFFELELOS" id="75433FE3-1079-E500-952E-C639B27B7EB2">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:35:38 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F213AF4A-7B69-1AC0-A60A-8E8AEA3C8932" referredColumn="E3909984-A347-AEE7-903C-1FB6F818EA76"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C1B9D91-72D2-861E-B780-3D44BE6D8407" name="TTIPUS_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="B8FC3742-678A-439B-D504-2C9CBEF1806F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B46E7FD-1D2C-3E7F-F8CD-F8393ECB2E12" name="TTIPUS_OKTATO_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:35:38 UTC</createdTime>
+<generatorID>D556AAB9-B4D0-82C8-A1DE-E27E1CDBF05C</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75433FE3-1079-E500-952E-C639B27B7EB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

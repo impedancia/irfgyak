@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A486359-CCCA-8D99-14FE-385ADEC622EF" name="FOGLALAS">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>33BE72E7-3586-D36C-2337-1AAB4591072B</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UGYFELNEV" id="386BE375-DCFC-2433-C35F-1ED0605D0288">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08F995CB-14F7-5132-4FD5-699108A6604E" referredColumn="FEEE17F5-2630-25E0-1987-251361C87ED3"/>
+</associations>
+</Column>
+<Column name="TANFKOD" id="AFC66EEE-A46B-2AD2-3C7E-5ED141D94F14">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9CAB2C8-F176-98F1-019B-D4FBE1DC7A77" referredColumn="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</associations>
+</Column>
+<Column name="FOGLDATUM" id="F1D6EA26-CE7C-0F55-0AD2-38D335A7F592">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:50:21 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>12A175D8-3A40-80E2-CDDF-65505B0B5F1C</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESZTVEVONEV" id="396E9639-C33C-60CC-53D1-1721734715A3">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUSZ" id="F743F80E-F1D4-64A7-9A2D-5B01B418DC49">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:51:48 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E353418E-C442-BBE8-AFFB-DD861DD9D732" name="FOGLALAS_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="AFC66EEE-A46B-2AD2-3C7E-5ED141D94F14"/>
+<colUsage columnID="396E9639-C33C-60CC-53D1-1721734715A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26DFB2D7-A437-68EA-22A5-88B17897F3AD" name="FOGLALAS_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>3DA8C9A0-BFAB-825F-40D4-9C58D7D5B20B</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFC66EEE-A46B-2AD2-3C7E-5ED141D94F14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB52F56B-E7D5-C05B-97A0-256061F6126F" name="FOGLALAS_UGYFEL_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>3B9769A8-A81E-EAAB-05D2-C2CD39522D5A</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="386BE375-DCFC-2433-C35F-1ED0605D0288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

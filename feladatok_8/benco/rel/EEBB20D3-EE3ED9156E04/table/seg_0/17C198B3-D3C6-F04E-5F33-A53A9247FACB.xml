@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17C198B3-D3C6-F04E-5F33-A53A9247FACB" name="OKTATO">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>3FA528E4-E68B-B138-0D68-42FB3DD04898</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OKTATOKOD" id="E3909984-A347-AEE7-903C-1FB6F818EA76">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="NEV" id="E8783B37-9EB0-A155-5624-1C92EC3BFC13">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:29:26 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANFFELELOS" id="CF911AD7-1B09-A1BE-A477-2F99F09C35C6">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:29:26 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A1107FE-476A-51A7-DB92-8D4247DE53B4" name="OKTATO_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="E3909984-A347-AEE7-903C-1FB6F818EA76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

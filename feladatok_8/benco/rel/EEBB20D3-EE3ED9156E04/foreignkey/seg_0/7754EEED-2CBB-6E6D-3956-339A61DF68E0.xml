@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7754EEED-2CBB-6E6D-3956-339A61DF68E0" containerWithKeyObject="6095E9EB-5170-F01E-1C5E-B1B1823ABC0A" localFKIndex="20C9C8C3-D11E-0214-DAED-B5DD7C75128B" name="SZAMLA_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<generatorID>238B66F1-38A9-0B31-566C-4300B6AC4828</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>TANFOLYAM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C4623B3-B506-F834-4109-AF84177475C5</referredTableID>
+<keyObject>08984751-DB37-B3DF-52A6-E0E971FC7DAD</keyObject>
+<referredKeyID>08984751-DB37-B3DF-52A6-E0E971FC7DAD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TANFKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

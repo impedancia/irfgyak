@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_Benco" id="EEBB20D3-41FB-5FCB-0C65-EE3ED9156E04" mainViewID="327E108B-91A0-B1C9-FD55-27DA8DE46470">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-10-21 11:40:35 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+</relationalModel>

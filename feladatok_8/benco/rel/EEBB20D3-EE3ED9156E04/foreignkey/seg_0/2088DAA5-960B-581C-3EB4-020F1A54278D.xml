@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2088DAA5-960B-581C-3EB4-020F1A54278D" containerWithKeyObject="4C4623B3-B506-F834-4109-AF84177475C5" localFKIndex="338B6AFE-9FFE-18F4-A650-4F5607CCCAAD" name="TANFOLYAM_TTIPUS_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>A4810221-7190-0414-041E-166B1331CC16</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>TTIPUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8757B506-7972-390D-4837-166E6388D1E9</referredTableID>
+<keyObject>7C1B9D91-72D2-861E-B780-3D44BE6D8407</keyObject>
+<referredKeyID>7C1B9D91-72D2-861E-B780-3D44BE6D8407</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TTIPUS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

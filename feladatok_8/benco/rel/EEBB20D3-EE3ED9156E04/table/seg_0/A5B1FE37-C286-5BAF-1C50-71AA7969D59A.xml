@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5B1FE37-C286-5BAF-1C50-71AA7969D59A" name="HELYSZIN">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>EE8FD4B4-6C8B-A243-ADD7-C3E5A6FDE5D8</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HELYSZINKOD" id="C673086F-DE5C-62EC-20C1-EDBF0AEC4916">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:25:50 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="NEV" id="51E963D0-20F9-0798-3D91-D27EA1738719">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:27:02 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIM" id="76932CFA-A112-17EC-0430-8AD3A1D889B5">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:27:02 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="BCFFDD97-B18C-177F-9634-0DDC7CA92162">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:27:02 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CF23F76-BAA9-03BB-5A14-51B1656A3EC3" name="HELYSZIN_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:25:50 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="C673086F-DE5C-62EC-20C1-EDBF0AEC4916"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

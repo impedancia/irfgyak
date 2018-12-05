@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9CAB2C8-F176-98F1-019B-D4FBE1DC7A77" containerWithKeyObject="0A486359-CCCA-8D99-14FE-385ADEC622EF" localFKIndex="26DFB2D7-A437-68EA-22A5-88B17897F3AD" name="FOGLALAS_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>3DA8C9A0-BFAB-825F-40D4-9C58D7D5B20B</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>TANFOLYAM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4C4623B3-B506-F834-4109-AF84177475C5</referredTableID>
+<keyObject>08984751-DB37-B3DF-52A6-E0E971FC7DAD</keyObject>
+<referredKeyID>08984751-DB37-B3DF-52A6-E0E971FC7DAD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TANFOLYAM_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

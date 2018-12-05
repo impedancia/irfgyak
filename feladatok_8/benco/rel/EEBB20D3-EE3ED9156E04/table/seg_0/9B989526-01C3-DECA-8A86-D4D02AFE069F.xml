@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B989526-01C3-DECA-8A86-D4D02AFE069F" name="UJARAK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:34:53 UTC</createdTime>
+<generatorID>DB2F0EB8-B6C9-ED80-BB29-C73A3D2FE2D3</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPUSKOD" id="864A3DB6-BF1D-B083-D5FC-1B8385DE5C6F">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 23:32:22 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="276D6093-4735-AC17-328E-CECE22673B33" referredColumn="B8FC3742-678A-439B-D504-2C9CBEF1806F"/>
+</associations>
+</Column>
+<Column name="KEZDODATUM" id="F3788978-FB97-8F22-A36A-0E6D62AC62C3">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:37:00 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>12A175D8-3A40-80E2-CDDF-65505B0B5F1C</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AR" id="74F1620E-5635-3867-9468-0E2F584E5287">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:37:00 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34AC0D78-56B3-33C3-B672-2A86649F9E1B" name="UJARAK_TTIPUS_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 23:32:22 UTC</createdTime>
+<generatorID>EE4A4E9B-AE60-FFD5-AC73-0EDE74D77FC7</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="864A3DB6-BF1D-B083-D5FC-1B8385DE5C6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

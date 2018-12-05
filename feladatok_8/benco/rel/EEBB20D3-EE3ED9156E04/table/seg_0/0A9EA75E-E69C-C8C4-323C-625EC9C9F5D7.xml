@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0A9EA75E-E69C-C8C4-323C-625EC9C9F5D7" name="OKTATOTANFOLYAM">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<generatorID>15ACF8F1-8543-7CCA-8445-B04CDD9DFBD1</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OKTATOKOD" id="DCE50DB3-F00F-45C1-7423-69C967D9DF84">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C18B27A2-65F2-A4F8-B71D-85661D579998" referredColumn="E3909984-A347-AEE7-903C-1FB6F818EA76"/>
+</associations>
+</Column>
+<Column name="TANFKOD" id="7DFE2D58-4D13-5F42-95BC-3A044972E74B">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB5FD676-1B2F-CD5A-DAE0-FBD31A4235D7" referredColumn="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77CBB688-1F83-9C05-FA15-CDC1E6F859CE" name="OKTATOTANFOLYAM_OKTATO_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<generatorID>1CBA6020-3733-3192-911E-7D81EFCDEEC4</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCE50DB3-F00F-45C1-7423-69C967D9DF84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5BE61C66-4D81-5024-A7F7-DAEA4B486817" name="OKTATOTANFOLYAM_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:47:17 UTC</createdTime>
+<generatorID>CBCC791B-512B-EF98-95A0-B2BCB1B491E0</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DFE2D58-4D13-5F42-95BC-3A044972E74B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

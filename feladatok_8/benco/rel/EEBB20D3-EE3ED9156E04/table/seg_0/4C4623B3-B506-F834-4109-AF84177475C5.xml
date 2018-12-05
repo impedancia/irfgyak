@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4C4623B3-B506-F834-4109-AF84177475C5" name="TANFOLYAM">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>7A0EFB6F-C3B9-CDC2-9255-FC2A7479D738</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPUSKOD" id="7240BAB2-5623-270A-A80A-6FF0D5AF8A90">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2088DAA5-960B-581C-3EB4-020F1A54278D" referredColumn="B8FC3742-678A-439B-D504-2C9CBEF1806F"/>
+</associations>
+</Column>
+<Column name="TANFKOD" id="270B246F-6D37-F9AD-A1C7-5B20E6BDB311">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="KEZDODATUM" id="4E77A58B-A823-9A41-9B6A-57892C3EAB16">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:38:27 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>12A175D8-3A40-80E2-CDDF-65505B0B5F1C</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEGEDATUM" id="4A88AD54-A2AC-3008-7003-7D7D52BE43C9">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:38:27 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>12A175D8-3A40-80E2-CDDF-65505B0B5F1C</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HELYSZINKOD" id="AE58EF5C-B0F3-3E92-DEEB-B3E7D39F24AB">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:25:50 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7FE22CD8-B908-C85F-EB91-26578BA62549" referredColumn="C673086F-DE5C-62EC-20C1-EDBF0AEC4916"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08984751-DB37-B3DF-52A6-E0E971FC7DAD" name="TANFOLYAM_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="338B6AFE-9FFE-18F4-A650-4F5607CCCAAD" name="TANFOLYAM_TTIPUS_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:22:49 UTC</createdTime>
+<generatorID>A4810221-7190-0414-041E-166B1331CC16</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7240BAB2-5623-270A-A80A-6FF0D5AF8A90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B160776-8CD1-6377-0CC7-E8570070FD87" name="TANFOLYAM_HELYSZIN_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:25:50 UTC</createdTime>
+<generatorID>14931069-1191-BA57-31A7-51AB4B633D4D</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE58EF5C-B0F3-3E92-DEEB-B3E7D39F24AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

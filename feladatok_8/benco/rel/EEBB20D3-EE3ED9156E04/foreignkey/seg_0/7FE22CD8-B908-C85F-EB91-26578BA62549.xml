@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7FE22CD8-B908-C85F-EB91-26578BA62549" containerWithKeyObject="4C4623B3-B506-F834-4109-AF84177475C5" localFKIndex="4B160776-8CD1-6377-0CC7-E8570070FD87" name="TANFOLYAM_HELYSZIN_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-01 22:25:50 UTC</createdTime>
+<generatorID>14931069-1191-BA57-31A7-51AB4B633D4D</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<referredTableLongName>HELYSZIN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A5B1FE37-C286-5BAF-1C50-71AA7969D59A</referredTableID>
+<keyObject>0CF23F76-BAA9-03BB-5A14-51B1656A3EC3</keyObject>
+<referredKeyID>0CF23F76-BAA9-03BB-5A14-51B1656A3EC3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>HELYSZINKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

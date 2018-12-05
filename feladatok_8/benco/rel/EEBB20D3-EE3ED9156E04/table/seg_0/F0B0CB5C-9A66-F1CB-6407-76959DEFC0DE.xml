@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0B0CB5C-9A66-F1CB-6407-76959DEFC0DE" name="BROSSURA">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 13:04:44 UTC</createdTime>
+<generatorID>7DD7D90F-B29E-4A5C-2EB6-F06E9BC57A49</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TANFKOD" id="BCE280C8-C62C-60E2-53A4-562296A2FB7E">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 13:04:44 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8FD5403-64CC-A000-56A8-53C6D4AEB3F2" referredColumn="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A930F3D5-5B4E-90FA-3A75-9874DFE5D08B" name="BROSSURA_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 13:05:03 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE280C8-C62C-60E2-53A4-562296A2FB7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2001DF3F-2EC8-D291-D256-1690683BF3FE" name="BROSSURA_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 13:04:44 UTC</createdTime>
+<generatorID>8CAD8DE3-587B-7C5E-0263-95DD58D8634C</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCE280C8-C62C-60E2-53A4-562296A2FB7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

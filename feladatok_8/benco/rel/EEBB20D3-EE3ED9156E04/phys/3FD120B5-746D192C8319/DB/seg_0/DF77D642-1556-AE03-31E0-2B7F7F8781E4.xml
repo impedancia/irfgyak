@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataBaseOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataBaseOraclev10g" name="DB1" directorySegmentName="seg_0" id="DF77D642-1556-AE03-31E0-2B7F7F8781E4">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-10-21 13:25:11 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+</DataBaseOraclev10g>

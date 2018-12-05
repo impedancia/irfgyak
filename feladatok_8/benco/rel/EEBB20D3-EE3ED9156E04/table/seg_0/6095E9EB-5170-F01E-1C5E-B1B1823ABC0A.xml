@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6095E9EB-5170-F01E-1C5E-B1B1823ABC0A" name="SZAMLA">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<generatorID>EB61B049-F8DE-953F-3F9B-095C696F4E09</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SZAMLASZAM" id="06DEE814-F830-0CB1-1364-52F473621292">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:59:33 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>CBBAD91D-0736-5DC4-5207-2BA3FA2314B8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>0001</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UGYFELNEV" id="BC74D3F2-D659-AB3C-2F87-E7C5DDE9250B">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EBFC74F-3EED-3E1F-2D95-4CF5204BA7E2" referredColumn="FEEE17F5-2630-25E0-1987-251361C87ED3"/>
+</associations>
+</Column>
+<Column name="TANFKOD" id="A32BA72A-05C8-4E1C-4C16-45D8BD31F658">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>E075C976-1507-9CB4-AE5A-665D629A6704</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7754EEED-2CBB-6E6D-3956-339A61DF68E0" referredColumn="270B246F-6D37-F9AD-A1C7-5B20E6BDB311"/>
+</associations>
+</Column>
+<Column name="KIALLITASDATUM" id="2EAC9F7D-CAF3-BF0F-D5C0-0F8E9D33904C">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 11:45:56 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>12A175D8-3A40-80E2-CDDF-65505B0B5F1C</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F78ACDBC-B17C-0FF5-1353-8351B43B19BF" name="SZAMLA_PK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:59:33 UTC</createdTime>
+<ownerDesignName>benco</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06DEE814-F830-0CB1-1364-52F473621292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DDA0E9D-32E7-E952-6928-D4DC1E43E4FB" name="SZAMLA_UGYFEL_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<generatorID>41120C1C-627D-1344-A292-7A17099B68E6</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC74D3F2-D659-AB3C-2F87-E7C5DDE9250B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20C9C8C3-D11E-0214-DAED-B5DD7C75128B" name="SZAMLA_TANFOLYAM_FK">
+<createdBy>Vukasin</createdBy>
+<createdTime>2018-12-02 10:57:55 UTC</createdTime>
+<generatorID>238B66F1-38A9-0B31-566C-4300B6AC4828</generatorID>
+<ownerDesignName>benco</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A32BA72A-05C8-4E1C-4C16-45D8BD31F658"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
