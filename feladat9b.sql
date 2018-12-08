@@ -41,10 +41,7 @@ BEGIN
       v_hova jaratok.hova%TYPE;
       v_legkisebb_ktg jaratok.koltseg%TYPE;
   BEGIN
-    OPEN jarat_cursor;
-    
-    v_legkisebb_ktg := 0;
-    
+    OPEN jarat_cursor;    
     LOOP
       FETCH jarat_cursor INTO v_honnan, v_hova, v_legkisebb_ktg;
       EXIT WHEN jarat_cursor%NOTFOUND;
