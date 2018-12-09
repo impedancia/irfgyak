@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D59E80D-0245-9322-9F23-EB7D313E74C2" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="ERTEKELES">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>ERTEKELES</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tanfolyamkod_fk" id="FB42C10C-ACF9-BB6A-B667-03E1BA8D0313">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>ERTEKELES</sourceObjSchema>
+<sourceObjName>TANFKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B73C8C03-F94D-B00F-E497-6DD6F21F4FC7" referredColumn="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201"/>
+</associations>
+</Column>
+<Column name="TEMAKOR" id="1EF234F6-F383-DD11-0AA1-259A4C942870">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>ERTEKELES</sourceObjSchema>
+<sourceObjName>TEMAKOR</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DARAB" id="E59B9D4B-240D-1014-F10B-9EAC49B3A34A">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>ERTEKELES</sourceObjSchema>
+<sourceObjName>DARAB</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATLAG" id="E5CC0958-F8D3-ACD8-854D-7DFB83411089">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>ERTEKELES</sourceObjSchema>
+<sourceObjName>ATLAG</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCB7611F-3835-18FD-A431-08541049A6AF" name="ERTEKELES_TANFOLYAM_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB42C10C-ACF9-BB6A-B667-03E1BA8D0313"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

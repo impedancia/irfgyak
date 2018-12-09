@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A634BB3-5AE0-6076-8666-6C976B0596E6" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="FOGLALAS">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>FOGLALAS</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UGYFELNEV" id="23000183-145E-AB83-D319-42FE811B9F86">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>FOGLALAS</sourceObjSchema>
+<sourceObjName>UGYFELNEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84DF2AA5-0644-AB40-8ABD-4B2B2476166A" referredColumn="1300C165-163B-9CEF-FE72-9C3583851E5F"/>
+</associations>
+</Column>
+<Column name="tanfolyamkod_fk" id="CED3338E-C392-1DDB-15CB-798352A4E1D2">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>FOGLALAS</sourceObjSchema>
+<sourceObjName>TANFKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="37EE293F-A168-314F-5838-7A043BF61EA4" referredColumn="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201"/>
+</associations>
+</Column>
+<Column name="FOGLDATUM" id="5B280623-740A-4267-37A5-560D49A699DE">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>FOGLALAS</sourceObjSchema>
+<sourceObjName>FOGLDATUM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESZTVEVONEV" id="6F551C1F-008D-4320-A447-37192642BB58">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>FOGLALAS</sourceObjSchema>
+<sourceObjName>RESZTVEVONEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUSZ" id="EC20492F-F0AA-F35E-6F09-D0C1E524ADBF">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>FOGLALAS</sourceObjSchema>
+<sourceObjName>STATUSZ</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="foglalas_id" id="001E2C5F-6907-4043-52B9-E8E7C92EA6AB">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:39:00 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E933AD13-70FA-6D53-AC21-2CD4703A0EB2" name="FOGLALAS_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>FOGLALAS_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="001E2C5F-6907-4043-52B9-E8E7C92EA6AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C69CAC35-4655-E00D-35B5-C60739F526BD" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="FOGLALAS_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>FOGLALAS_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CED3338E-C392-1DDB-15CB-798352A4E1D2"/>
+<colUsage columnID="6F551C1F-008D-4320-A447-37192642BB58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84EE98CC-73CB-2B11-D908-E7496D9B2847" name="FOGLALAS_TANFOLYAM_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CED3338E-C392-1DDB-15CB-798352A4E1D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56D89500-E299-511F-2C76-EA7C8066050C" name="FOGLALAS_UGYFEL_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23000183-145E-AB83-D319-42FE811B9F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

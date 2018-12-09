@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="924F2E1D-DF1C-A5D8-8B0C-A0A8DC573D33" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="UGYFEL">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>UGYFEL</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UGYFELNEV" id="1300C165-163B-9CEF-FE72-9C3583851E5F">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UGYFEL</sourceObjSchema>
+<sourceObjName>UGYFELNEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ugyfel_ugyfelnev_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>UGYFEL_UGYFELNEV_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="CIM" id="65D3DC06-5865-5DB9-44EA-1E8D81D3ECDE">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UGYFEL</sourceObjSchema>
+<sourceObjName>CIM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="5CD813DD-8F8C-094B-596E-C3FC8B2C40FC">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UGYFEL</sourceObjSchema>
+<sourceObjName>TELEFON</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KAPCSTARTO" id="E26C8047-CA95-BE5C-852A-D7EF42ED5974">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UGYFEL</sourceObjSchema>
+<sourceObjName>KAPCSTARTO</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAEC6E43-BF5B-840D-0EB3-4A8F4D2D784E" name="UGYFEL_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>UGYFEL_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1300C165-163B-9CEF-FE72-9C3583851E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8FCCC7B-820E-CCBF-2E90-8C24E89CB2E9" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="UGYFEL_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>UGYFEL_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:27 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1300C165-163B-9CEF-FE72-9C3583851E5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="593B54B3-17C1-6570-B2FC-C0132DF95025" containerWithKeyObject="F562D124-1794-43D2-FE1D-8FD365E0B5D4" localFKIndex="CFC80D7E-80D7-54CB-E9DC-59E7D56C78F2" name="OKTATOTANFOLYAM_OKTATO_FK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATOTANFOLYAM_OKTATO_FK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:06 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>E9QZF1.FOGLALAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A634BB3-5AE0-6076-8666-6C976B0596E6</referredTableID>
+<keyObject>E933AD13-70FA-6D53-AC21-2CD4703A0EB2</keyObject>
+<referredKeyID>E933AD13-70FA-6D53-AC21-2CD4703A0EB2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>foglalas_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

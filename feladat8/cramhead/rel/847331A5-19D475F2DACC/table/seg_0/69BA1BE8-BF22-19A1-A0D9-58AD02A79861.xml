@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69BA1BE8-BF22-19A1-A0D9-58AD02A79861" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="tanfolyam_lebonyolitas">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TANFOLYAM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<ordsAlias>tanfolyam</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipuskod_fk" id="E3C7DC80-82E8-78C1-B416-191DC9B9E7C5">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TANFOLYAM</sourceObjSchema>
+<sourceObjName>TIPUSKOD1</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1AB1CE65-CB76-5929-441B-5194E615BD06" referredColumn="87BFDEA1-6B45-237C-96D2-01D87CA83A7B"/>
+</associations>
+</Column>
+<Column name="tanfolyamkod" id="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TANFOLYAM</sourceObjSchema>
+<sourceObjName>TANFKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>tanfolyam_tanfkod_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>TANFOLYAM_TANFKOD_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="kezdodatum" id="E0CBEA5E-C7B2-7C09-8457-91744361FA1E">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TANFOLYAM</sourceObjSchema>
+<sourceObjName>KEZDODATUM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vegdatum" id="91EC5A6F-26CE-5E17-C4DA-B2F63ECD10E9">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TANFOLYAM</sourceObjSchema>
+<sourceObjName>VEGEDATUM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="helyszinkod_fk" id="AFD86F21-F5BF-863A-D355-CA684FB02211">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TANFOLYAM</sourceObjSchema>
+<sourceObjName>HELYSZINKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="422D35D1-4309-CFFC-4988-E04439C76148" referredColumn="62FA2E84-E10E-639A-1D09-E9F53858A602"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEF29937-2A37-7DFB-7175-A4EF1A39C5AE" name="TANFOLYAM_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TANFOLYAM_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39C41889-EA3A-72F9-77AD-C00F1E9A9801" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="TANFOLYAM_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TANFOLYAM_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64C8BD5B-AD2C-72FC-1D27-EB7B496B2604" name="TANFOLYAM_HELYSZIN_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AFD86F21-F5BF-863A-D355-CA684FB02211"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="815482AB-D96A-C50A-F0A5-B1BA531CE30C" name="TANFOLYAM_TTIPUS_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3C7DC80-82E8-78C1-B416-191DC9B9E7C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

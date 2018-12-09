@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D0E5857-DD2C-A0CD-8A9F-5B8AEA84D1F5" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="HELYSZIN">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>HELYSZIN</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="HELYSZINKOD" id="62FA2E84-E10E-639A-1D09-E9F53858A602">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>HELYSZIN</sourceObjSchema>
+<sourceObjName>HELYSZINKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>helyszin_helyszinkod_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>HELYSZIN_HELYSZINKOD_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="NEV" id="D7EFDB4C-3AFE-4FFA-4D2D-256181C438A7">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>HELYSZIN</sourceObjSchema>
+<sourceObjName>NEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIM" id="295FF496-57BE-6DB9-E946-64CE46A7596D">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>HELYSZIN</sourceObjSchema>
+<sourceObjName>CIM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="FAE4FE34-A855-79C3-033F-C0EF5C01FE9B">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>HELYSZIN</sourceObjSchema>
+<sourceObjName>TELEFON</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB9261D9-3165-2E9E-EAD3-18F5C8C86D2B" name="HELYSZIN_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>HELYSZIN_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62FA2E84-E10E-639A-1D09-E9F53858A602"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E939688-6D42-9592-3D63-592726B95D17" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="HELYSZIN_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>HELYSZIN_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62FA2E84-E10E-639A-1D09-E9F53858A602"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

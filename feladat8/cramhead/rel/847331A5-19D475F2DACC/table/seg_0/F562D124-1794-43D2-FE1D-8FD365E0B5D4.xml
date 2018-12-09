@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F562D124-1794-43D2-FE1D-8FD365E0B5D4" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="OKTATOTANFOLYAM">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATOTANFOLYAM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:06 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OKTATOKOD" id="50A82A9C-3505-62B2-3CA4-8034C980BD08">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>OKTATOTANFOLYAM</sourceObjSchema>
+<sourceObjName>OKTATOKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:06 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="593B54B3-17C1-6570-B2FC-C0132DF95025" referredColumn="001E2C5F-6907-4043-52B9-E8E7C92EA6AB"/>
+</associations>
+</Column>
+<Column name="TANFKOD" id="97398B5E-2F11-0F16-4956-F8CC5FD529F8">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>OKTATOTANFOLYAM</sourceObjSchema>
+<sourceObjName>TANFKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:06 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B70411F3-69BC-60C7-E1CA-82FDAB0D346E" referredColumn="09C2EE8B-28D4-B7F1-9CBF-B89A3F0AA201"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFC80D7E-80D7-54CB-E9DC-59E7D56C78F2" name="OKTATOTANFOLYAM_OKTATO_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:06 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50A82A9C-3505-62B2-3CA4-8034C980BD08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44F81D5E-558E-AA7D-D07E-AA9B69F1C289" name="OKTATOTANFOLYAM_TANFOLYAM_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:07 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97398B5E-2F11-0F16-4956-F8CC5FD529F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

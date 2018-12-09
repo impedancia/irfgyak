@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B70411F3-69BC-60C7-E1CA-82FDAB0D346E" containerWithKeyObject="F562D124-1794-43D2-FE1D-8FD365E0B5D4" localFKIndex="44F81D5E-558E-AA7D-D07E-AA9B69F1C289" name="OKTATOTANFOLYAM_TANFOLYAM_FK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATOTANFOLYAM_TANFOLYAM_FK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:07 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>E9QZF1.TANFOLYAM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>69BA1BE8-BF22-19A1-A0D9-58AD02A79861</referredTableID>
+<keyObject>FEF29937-2A37-7DFB-7175-A4EF1A39C5AE</keyObject>
+<referredKeyID>FEF29937-2A37-7DFB-7175-A4EF1A39C5AE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TANFKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

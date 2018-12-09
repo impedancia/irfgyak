@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FOGLALAS" directorySegmentName="seg_0" id="5A634BB3-5AE0-6076-8666-6C976B0596E6">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>78FFF5EE-D748-9ECC-F995-99348BE7E9D5</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="foglalas_id" id="001E2C5F-6907-4043-52B9-E8E7C92EA6AB">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:39:00 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UGYFELNEV" id="23000183-145E-AB83-D319-42FE811B9F86">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FOGLDATUM" id="5B280623-740A-4267-37A5-560D49A699DE">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESZTVEVONEV" id="6F551C1F-008D-4320-A447-37192642BB58">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tanfolyamkod_fk" id="CED3338E-C392-1DDB-15CB-798352A4E1D2">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUSZ" id="EC20492F-F0AA-F35E-6F09-D0C1E524ADBF">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="FOGLALAS_PK" id="C69CAC35-4655-E00D-35B5-C60739F526BD">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:36 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FOGLALAS_UGYFEL_FK" id="56D89500-E299-511F-2C76-EA7C8066050C">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FOGLALAS_TANFOLYAM_FK" id="84EE98CC-73CB-2B11-D908-E7496D9B2847">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FOGLALAS_PK" id="E933AD13-70FA-6D53-AC21-2CD4703A0EB2">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<existingIndex>C69CAC35-4655-E00D-35B5-C60739F526BD</existingIndex>
+<indexSegment>04B032F8-4341-F763-4C26-524096B194BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

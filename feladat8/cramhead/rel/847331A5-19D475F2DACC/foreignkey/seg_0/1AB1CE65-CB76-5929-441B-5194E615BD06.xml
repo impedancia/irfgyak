@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1AB1CE65-CB76-5929-441B-5194E615BD06" containerWithKeyObject="69BA1BE8-BF22-19A1-A0D9-58AD02A79861" localFKIndex="815482AB-D96A-C50A-F0A5-B1BA531CE30C" name="TANFOLYAM_TTIPUS_FK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TANFOLYAM_TTIPUS_FK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>E9QZF1.TTIPUS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>63C93B94-0DD5-8B69-6CE5-6832FCA306AB</referredTableID>
+<keyObject>4AD302F5-D4EA-85B8-74C2-1644D8876C15</keyObject>
+<referredKeyID>4AD302F5-D4EA-85B8-74C2-1644D8876C15</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TIPUSKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="OKTATO" directorySegmentName="seg_0" id="640E722B-BEB6-730D-F432-4577A70DACFD">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>78FFF5EE-D748-9ECC-F995-99348BE7E9D5</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OKTATOKOD" id="50ECD1B2-32A3-AE3F-3C9F-C9215706F06C">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NEV" id="A380BCA2-43DF-366B-4968-3C32977DCD1B">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="OKTATO_PK" id="C6D9A6EF-E66A-4D0D-6A55-372365BFB12E">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="OKTATO_PK" id="935C241D-6C84-5F24-49DE-2D52043DE714">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<existingIndex>C6D9A6EF-E66A-4D0D-6A55-372365BFB12E</existingIndex>
+<indexSegment>04B032F8-4341-F763-4C26-524096B194BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

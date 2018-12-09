@@ -1,0 +1,4 @@
+insert into ertekeles values ('CSTJAN1','Cegismeretek',8,4.25);
+insert into ertekeles values ('CSTJAN1','Cegjog',6,4.5);
+insert into ertekeles values ('CSTJAN2','Cegismeretek',5,4.8);
+insert into ertekeles values ('CSTJAN2','Cegjog',5,4.2);

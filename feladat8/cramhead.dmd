@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="cramhead" id="A78C8949-8D7B-D07C-C06D-C4E0C2665040" version="3.5">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 19:55:41 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A78C8949-8D7B-D07C-C06D-C4E0C2665040</designId>
+</OSDM_Design>

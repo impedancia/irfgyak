@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="HELYSZIN" directorySegmentName="seg_0" id="1D0E5857-DD2C-A0CD-8A9F-5B8AEA84D1F5">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>78FFF5EE-D748-9ECC-F995-99348BE7E9D5</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CIM" id="295FF496-57BE-6DB9-E946-64CE46A7596D">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HELYSZINKOD" id="62FA2E84-E10E-639A-1D09-E9F53858A602">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="NEV" id="D7EFDB4C-3AFE-4FFA-4D2D-256181C438A7">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFON" id="FAE4FE34-A855-79C3-033F-C0EF5C01FE9B">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="HELYSZIN_PK" id="2E939688-6D42-9592-3D63-592726B95D17">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="HELYSZIN_PK" id="AB9261D9-3165-2E9E-EAD3-18F5C8C86D2B">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:45 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<segment>04B032F8-4341-F763-4C26-524096B194BC</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<existingIndex>2E939688-6D42-9592-3D63-592726B95D17</existingIndex>
+<indexSegment>04B032F8-4341-F763-4C26-524096B194BC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

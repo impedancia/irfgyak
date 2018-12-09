@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="422D35D1-4309-CFFC-4988-E04439C76148" containerWithKeyObject="69BA1BE8-BF22-19A1-A0D9-58AD02A79861" localFKIndex="64C8BD5B-AD2C-72FC-1D27-EB7B496B2604" name="TANFOLYAM_HELYSZIN_FK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TANFOLYAM_HELYSZIN_FK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:15 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>E9QZF1.HELYSZIN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1D0E5857-DD2C-A0CD-8A9F-5B8AEA84D1F5</referredTableID>
+<keyObject>2E939688-6D42-9592-3D63-592726B95D17</keyObject>
+<referredKeyID>2E939688-6D42-9592-3D63-592726B95D17</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>HELYSZINKOD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

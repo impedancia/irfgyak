@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="84DF2AA5-0644-AB40-8ABD-4B2B2476166A" containerWithKeyObject="5A634BB3-5AE0-6076-8666-6C976B0596E6" localFKIndex="56D89500-E299-511F-2C76-EA7C8066050C" name="FOGLALAS_UGYFEL_FK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>FOGLALAS_UGYFEL_FK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:37 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>E9QZF1.UGYFEL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>924F2E1D-DF1C-A5D8-8B0C-A0A8DC573D33</referredTableID>
+<keyObject>AAEC6E43-BF5B-840D-0EB3-4A8F4D2D784E</keyObject>
+<referredKeyID>AAEC6E43-BF5B-840D-0EB3-4A8F4D2D784E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>UGYFELNEV</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

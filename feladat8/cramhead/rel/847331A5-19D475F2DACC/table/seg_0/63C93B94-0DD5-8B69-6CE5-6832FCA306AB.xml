@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63C93B94-0DD5-8B69-6CE5-6832FCA306AB" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="tanfolyam_tipus">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TTIPUS</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<ordsAlias>ttipus</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIPUSKOD" id="87BFDEA1-6B45-237C-96D2-01D87CA83A7B">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TTIPUS</sourceObjSchema>
+<sourceObjName>TIPUSKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>ttipus_tipuskod_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>TTIPUS_TIPUSKOD_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="TIPUSNEV" id="24B7EC07-77A4-C4FE-D62E-1A84BCE824AC">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TTIPUS</sourceObjSchema>
+<sourceObjName>TIPUSNEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINLETSZAM" id="5CAD30CD-1C53-DAC5-D006-65B454C007FA">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TTIPUS</sourceObjSchema>
+<sourceObjName>MINLETSZAM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXLETSZAM" id="3AF04769-8DEA-4FB5-9410-36687F25C850">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TTIPUS</sourceObjSchema>
+<sourceObjName>MAXLETSZAM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANFFELELOS" id="DD1361A0-B69D-4A9C-76B9-523094F6E650">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>TTIPUS</sourceObjSchema>
+<sourceObjName>TANFFELELOS</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:22 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AB5112B-0643-D583-8168-58F6EC2FF693" referredColumn="50ECD1B2-32A3-AE3F-3C9F-C9215706F06C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4AD302F5-D4EA-85B8-74C2-1644D8876C15" name="TTIPUS_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TTIPUS_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:23 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87BFDEA1-6B45-237C-96D2-01D87CA83A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCE901B8-0A7F-E23E-F397-97AD81ED789F" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="TTIPUS_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>TTIPUS_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:23 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87BFDEA1-6B45-237C-96D2-01D87CA83A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6C7BD9C-7D17-5F79-0881-67995C8CA32E" name="TTIPUS_OKTATO_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:23 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD1361A0-B69D-4A9C-76B9-523094F6E650"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

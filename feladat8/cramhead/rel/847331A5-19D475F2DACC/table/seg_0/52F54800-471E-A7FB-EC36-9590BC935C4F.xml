@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52F54800-471E-A7FB-EC36-9590BC935C4F" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="tanfolyam_ara">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>UJARAK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:34 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<ordsAlias>ujarak</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tipuskod_fk" id="8ABB090C-737A-4EFE-7627-48353F22ABAD">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UJARAK</sourceObjSchema>
+<sourceObjName>TIPUSKOD1</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:34 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6C15309-D66D-A20D-0D1C-B92AA806E111" referredColumn="87BFDEA1-6B45-237C-96D2-01D87CA83A7B"/>
+</associations>
+</Column>
+<Column name="ervenyesseg_kezdete" id="4EA59DDF-1CB3-36DB-1C8B-40B94290977D">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UJARAK</sourceObjSchema>
+<sourceObjName>KEZDODATUM</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:34 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ervenyesseg_vege" id="BF59A4C3-855C-FB42-9D36-1D96C1C052A2">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:34:05 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AR" id="4BCC4E64-FF72-C172-723C-B5FAFE7AEEE6">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>UJARAK</sourceObjSchema>
+<sourceObjName>AR</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:34 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aktiv" id="BF401679-9493-AB53-38E8-E4CCBA28C920">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:32:48 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF6F8BD5-2DE4-BDAC-D020-DC85CBD7BAB2" name="UJARAK_TTIPUS_FK">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:08:34 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8ABB090C-737A-4EFE-7627-48353F22ABAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

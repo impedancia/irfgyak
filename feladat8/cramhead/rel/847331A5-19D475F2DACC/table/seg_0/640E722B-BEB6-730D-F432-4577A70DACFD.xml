@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="640E722B-BEB6-730D-F432-4577A70DACFD" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="OKTATO">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATO</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OKTATOKOD" id="50ECD1B2-32A3-AE3F-3C9F-C9215706F06C">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>OKTATO</sourceObjSchema>
+<sourceObjName>OKTATOKOD</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>oktato_oktatokod_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>OKTATO_OKTATOKOD_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="NEV" id="A380BCA2-43DF-366B-4968-3C32977DCD1B">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>OKTATO</sourceObjSchema>
+<sourceObjName>NEV</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128 BYTE</dataTypeSize>
+<ownDataTypeParameters>128 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanfolyam_felelos" id="38A140B3-A373-37A6-0057-5A183324D42A">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 21:17:57 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="935C241D-6C84-5F24-49DE-2D52043DE714" name="OKTATO_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATO_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50ECD1B2-32A3-AE3F-3C9F-C9215706F06C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6D9A6EF-E66A-4D0D-6A55-372365BFB12E" schemaObject="3D186F5A-7D61-D0D4-CC90-A6B74FC9F932" name="OKTATO_PK">
+<sourceConnName>aramis</sourceConnName>
+<sourceObjSchema>E9QZF1</sourceObjSchema>
+<sourceObjName>OKTATO_PK</sourceObjName>
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:54 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50ECD1B2-32A3-AE3F-3C9F-C9215706F06C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

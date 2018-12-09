@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ERTEKELES" directorySegmentName="seg_0" id="2D59E80D-0245-9322-9F23-EB7D313E74C2">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<schemaObject>3D186F5A-7D61-D0D4-CC90-A6B74FC9F932</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>78FFF5EE-D748-9ECC-F995-99348BE7E9D5</segment>
+<tableSpace>F610881F-562A-D62B-99DA-9B46FC7722D8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TEMAKOR" id="1EF234F6-F383-DD11-0AA1-259A4C942870">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DARAB" id="E59B9D4B-240D-1014-F10B-9EAC49B3A34A">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ATLAG" id="E5CC0958-F8D3-ACD8-854D-7DFB83411089">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tanfolyamkod_fk" id="FB42C10C-ACF9-BB6A-B667-03E1BA8D0313">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ERTEKELES_TANFOLYAM_FK" id="BCB7611F-3835-18FD-A431-08541049A6AF">
+<createdBy>norbert</createdBy>
+<createdTime>2018-12-09 20:07:30 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev12c>
