@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="66D14E40-44A8-BEFF-9FAB-15EA8A06DBAD" mainViewID="349875BB-9E44-7E37-9316-CFA3F918B3E7">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:10:46 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

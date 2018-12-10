@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F8F77DB-430E-322F-7B4B-288E74B70C8D" containerWithKeyObject="33965048-33BA-F4A6-1FEE-D2BC1FF8B399" localFKIndex="EFA18613-08B7-14EA-5DC3-9BA4A7C87426" name="tanfolyam_oktato_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>3B89D6B9-92E9-9359-AFA4-4E9274ABD60B</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>oktato</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5DAA81D6-2D55-FAF6-A199-CA033A312643</referredTableID>
+<keyObject>F367E94E-3EBF-1360-4B5D-2CAC58094DCE</keyObject>
+<referredKeyID>F367E94E-3EBF-1360-4B5D-2CAC58094DCE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>kod</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

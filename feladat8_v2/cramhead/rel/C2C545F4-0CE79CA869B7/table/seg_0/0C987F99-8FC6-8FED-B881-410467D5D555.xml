@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C987F99-8FC6-8FED-B881-410467D5D555" name="tanfolyam_tipus">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>D3383626-E463-EBBE-7D20-2C304414850E</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kod" id="DBD2A296-53EB-C238-6C07-4973348E8718">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>17E5BE30-A176-73E5-1B95-2407278D567C</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nev" id="680496BF-499B-BBEC-B2AB-C949DDF2525D">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>CE398AA4-1C21-77DF-518C-25754D42CBF6</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="minletszam" id="1535AF4C-3B01-B601-4920-87AFD9B96DCE">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>19F5B349-BEF4-8D9C-CE5B-61D8CCAF4D64</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6CFD6BFC-B425-EE8B-9063-6704F49F23F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="maxletszam" id="EA8B098A-0357-9B4F-B246-E7E7A7386352">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>FD2CC590-EED5-F650-6ED1-B09B9CA8A602</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6CFD6BFC-B425-EE8B-9063-6704F49F23F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oktato_kod" id="BDBA7D44-14D0-5A93-C46C-9C982D14CF7D">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>9A93E4FB-1E5B-0380-1427-5E925B77E7F9</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14E3F9A5-E7AF-8474-FF64-3A4FE6E7D60D" referredColumn="7AFC5D3C-DF68-16B5-BB87-0CDD3DB74C1D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22FE3B4B-3A05-0257-BE11-13FC40749DFC" name="tanfolyam_tipus_PK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>4503EF24-0E55-548D-B1DE-C6FB308F3311</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBD2A296-53EB-C238-6C07-4973348E8718"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B75ABB3-2179-7544-E3B9-4DA419F6FA5D" name="tanfolyam_tipus_oktato_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>BEECCEE0-FCEA-0D2E-3018-FAF2BE4690F7</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDBA7D44-14D0-5A93-C46C-9C982D14CF7D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

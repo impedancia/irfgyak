@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A2DF5D1-193F-7879-FD69-E968955B2B8A" name="ertekeles">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>BBF67577-5130-292B-B2D7-0122F419C271</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="temakor" id="7D60CCE0-7DE1-A3EA-9AF8-C6DB7BAB9486">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>C0B53B21-9B08-7177-8009-A204C33F3ABB</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="darab" id="1AA050CE-5119-8C4E-E737-2F37EC156249">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>2B91712B-CB58-4882-A12B-554686B14B1E</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6CFD6BFC-B425-EE8B-9063-6704F49F23F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="atlag" id="E1E5CF82-AB2C-4131-E415-915AFD13E01A">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>0583B7BD-99D5-EBD4-4395-E2F345D2FDD8</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<domain>5C70ED49-B5D0-0CB8-29D8-F121139F55C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tanfolyam_kod" id="DE0504D5-6B5A-AA70-0CEC-75E7DBDE766B">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>A7031501-6F37-5BB4-2C97-A0A0B0F2D209</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7E47477-2F38-F0C5-48CB-0A5D3541FEDA" referredColumn="74473AA2-758E-E7C8-5157-0CA7DEB71047"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1837161-E86E-A146-274C-A0E8DE04D734" name="ertekeles_tanfolyam_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:23 UTC</createdTime>
+<generatorID>79374E03-C9EF-28F6-1D38-DCF83CCC42FA</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE0504D5-6B5A-AA70-0CEC-75E7DBDE766B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

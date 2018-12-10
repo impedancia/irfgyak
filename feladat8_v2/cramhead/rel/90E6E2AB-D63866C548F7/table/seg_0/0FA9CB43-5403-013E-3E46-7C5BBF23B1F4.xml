@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FA9CB43-5403-013E-3E46-7C5BBF23B1F4" name="tanfolyam">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>91C5D190-A964-3961-B806-C98DC5C9989C</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="kod" id="74473AA2-758E-E7C8-5157-0CA7DEB71047">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>A1D9FCCD-A41A-60F7-FBE0-588364612648</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kezdodatum" id="2B6309C0-1CF4-DE53-E973-13CA81BA53F4">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>2EDFC285-5343-81C7-DF76-CDBA2C0DEED3</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>96294E0A-062E-5C02-5DD0-F270F220CA98</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vegedatum" id="1B74B16D-A043-CF85-8828-9E38238611DC">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>ABE5600B-833B-9D49-DB34-DFE5FD0E611F</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>96294E0A-062E-5C02-5DD0-F270F220CA98</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="oktato_kod" id="B55D0124-7291-B008-8443-BC81C6533B4D">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>31AB26C4-09BE-1AA6-BC72-CD9DE7BD5050</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02B2CC8F-1466-D488-94E8-8612336F0C26" referredColumn="DA394B33-E75D-FAA7-0CE9-16DCED4F85AB"/>
+</associations>
+</Column>
+<Column name="helyszin_kod" id="8BC09CC0-0939-6E35-6091-19D82688446A">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>2CD41C07-4641-354C-DD90-829983D6050E</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99AEF600-8C10-DAB7-4F84-D378507B1774" referredColumn="C6F6855A-6DEB-7B1E-9986-D4CBC67D2F17"/>
+</associations>
+</Column>
+<Column name="tanfolyam_tipus_kod" id="04D79AA0-91E9-EB92-1AD4-F1A624CE98A2">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 21:25:40 UTC</createdTime>
+<generatorID>F574F0EF-8CBF-9AFE-20F1-21ECFF7EB4C4</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD5D3C54-792D-3BC6-D34A-A28A3550F4B2" referredColumn="C7C73ECB-9F75-D994-C80A-6815E0D5F610"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8505832-FA6C-CDBD-BAEE-B866C1F87B15" name="tanfolyam_PK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>9E7AD1F3-6DB8-B26D-8C6D-AE41928482FD</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74473AA2-758E-E7C8-5157-0CA7DEB71047"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29F9B2F2-9185-9143-962D-9ABDEE0DE23C" name="tanfolyam_oktato_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:22 UTC</createdTime>
+<generatorID>97CDEF80-9EE7-1996-AF2E-490435E0CE8D</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B55D0124-7291-B008-8443-BC81C6533B4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1ED69FA-87AC-4C97-8315-440C5B272B77" name="tanfolyam_helyszin_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:16:23 UTC</createdTime>
+<generatorID>EAF6ADE9-02C4-F9BB-EB6C-F24F2541A30D</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BC09CC0-0939-6E35-6091-19D82688446A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07E9405A-ED06-3512-E34F-A4412248C7EF" name="tanfolyam_tanfolyam_tipus_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 21:25:40 UTC</createdTime>
+<generatorID>4D05935E-475C-C813-6FD6-D23E66CAE717</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04D79AA0-91E9-EB92-1AD4-F1A624CE98A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

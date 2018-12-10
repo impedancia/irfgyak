@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBF67577-5130-292B-B2D7-0122F419C271" name="ertekeles">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:49:46 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<engineerTo>
+<item key="90E6E2AB-811F-1E74-AB3D-D63866C548F7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="temakor" id="C0B53B21-9B08-7177-8009-A204C33F3ABB">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:50:44 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<engineerTo>
+<item key="90E6E2AB-811F-1E74-AB3D-D63866C548F7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="darab" id="2B91712B-CB58-4882-A12B-554686B14B1E">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:50:50 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<engineerTo>
+<item key="90E6E2AB-811F-1E74-AB3D-D63866C548F7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6CFD6BFC-B425-EE8B-9063-6704F49F23F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="atlag" id="0583B7BD-99D5-EBD4-4395-E2F345D2FDD8">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:50:56 UTC</createdTime>
+<ownerDesignName>cramhead</ownerDesignName>
+<engineerTo>
+<item key="90E6E2AB-811F-1E74-AB3D-D63866C548F7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<domain>5C70ED49-B5D0-0CB8-29D8-F121139F55C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kod" id="A7031501-6F37-5BB4-2C97-A0A0B0F2D209">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 18:13:33 UTC</createdTime>
+<generatorID>79374E03-C9EF-28F6-1D38-DCF83CCC42FA</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<engineerTo>
+<item key="90E6E2AB-811F-1E74-AB3D-D63866C548F7" value="true"/>
+</engineerTo>
+<referedAttribute>A1D9FCCD-A41A-60F7-FBE0-588364612648</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
