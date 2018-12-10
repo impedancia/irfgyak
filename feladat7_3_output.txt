@@ -1,0 +1,22 @@
+
+Procedure LOCK_TEST compiled
+
+mode1_sql: EXCLUSIVE
+mode2_sql: SHARE
+sql: LOCK TABLE dolgozo IN EXCLUSIVE MODE
+sql: LOCK TABLE dolgozo IN SHARE MODE
+NEM
+-60 -- ORA-00060: erõforrásra várakozás közben holtpont jött létre
+
+
+PL/SQL procedure successfully completed.
+
+mode1_sql: ROW SHARE
+mode2_sql: SHARE
+sql: LOCK TABLE dolgozo IN ROW SHARE MODE
+sql: LOCK TABLE dolgozo IN SHARE MODE
+OK
+
+
+PL/SQL procedure successfully completed.
+
