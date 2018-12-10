@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="02BA0E3D-9508-1766-B779-7A596B5E8205" containerWithKeyObject="FA72F081-BF70-4FD4-C886-F97C45238F89" localFKIndex="9200E2C7-D9E8-66A9-FD1B-B922185524E2" name="foglalas_ugyfel_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>D82A0B76-A7E2-6443-8772-87F6E89446E4</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<referredTableLongName>ugyfel</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F1565136-1E86-B3D3-3CC3-608672F9EC3C</referredTableID>
+<keyObject>D9A7B37E-3954-4636-7F8F-04491BA15AD3</keyObject>
+<referredKeyID>D9A7B37E-3954-4636-7F8F-04491BA15AD3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nev</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

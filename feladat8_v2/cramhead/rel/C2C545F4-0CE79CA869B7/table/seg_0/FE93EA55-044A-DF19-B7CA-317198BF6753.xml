@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE93EA55-044A-DF19-B7CA-317198BF6753" name="ertekeles">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>BBF67577-5130-292B-B2D7-0122F419C271</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tanfolyam_kod" id="F145936A-8E53-787D-A3B5-CC6B805B39AA">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>12B7DC69-0B51-877F-0074-5FF1E56D725C</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0BE2166-CC85-F1AC-2087-298054BF625B" referredColumn="B56F2326-C99D-8EAA-18DF-10A8F5B0D861"/>
+</associations>
+</Column>
+<Column name="temakor" id="F7D94565-D945-FD8F-C1C1-CD013E821495">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>C0B53B21-9B08-7177-8009-A204C33F3ABB</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="darab" id="1C25E697-64C7-2B0D-ABBD-947E77321AE0">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>2B91712B-CB58-4882-A12B-554686B14B1E</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>6CFD6BFC-B425-EE8B-9063-6704F49F23F6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="atlag" id="8B904725-23BD-FB8D-FEB3-D1735507D1DB">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>0583B7BD-99D5-EBD4-4395-E2F345D2FDD8</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<domain>5C70ED49-B5D0-0CB8-29D8-F121139F55C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E899A3AF-9D91-1400-8D4D-D4B5E8648120" name="ertekeles_tanfolyam_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>20E9D4DB-A605-2AFC-43F2-260AD7B1B884</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F145936A-8E53-787D-A3B5-CC6B805B39AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

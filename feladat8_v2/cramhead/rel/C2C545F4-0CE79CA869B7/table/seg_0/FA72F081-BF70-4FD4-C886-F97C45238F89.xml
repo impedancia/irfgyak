@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA72F081-BF70-4FD4-C886-F97C45238F89" name="foglalas">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>15A65292-A183-0E47-6272-0F1D7FD5C807</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ugyfel_nev" id="EC1B156B-F852-76DC-738E-A459CDBF6D95">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>126B49F8-A953-7C54-6E89-90EF756D7243</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02BA0E3D-9508-1766-B779-7A596B5E8205" referredColumn="9FE800A7-C4CB-196E-AD85-FFD37B65EAF4"/>
+</associations>
+</Column>
+<Column name="tanfolyam_kod" id="6DD46FB1-3501-F996-737C-6921FADB3C39">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>56DA6B25-EB6E-F30A-F08D-0694595E5211</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>5341DD72-D512-0FD5-4376-4CA5AD0C1B13</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="341210EE-F459-F57E-8CC9-F771B166708E" referredColumn="B56F2326-C99D-8EAA-18DF-10A8F5B0D861"/>
+</associations>
+</Column>
+<Column name="datum" id="84022A51-F90C-F489-A218-1F8457F21CE9">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>5BD0BDB1-B2D6-A4CE-AF40-0ADF83DF4676</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>96294E0A-062E-5C02-5DD0-F270F220CA98</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resztvevo" id="E4243337-39D1-1AB8-08D3-CCCC9B1259FE">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>2323375B-8C2C-B700-3B77-80E933CD7684</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>90809EF6-0078-EDFA-EF82-A7446A6DABDB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="statusz" id="04A225DE-8CAE-4FBF-1860-595A66271CA5">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>0B6EAEC8-09AF-5086-AA06-8D4363E9A5BB</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT037</logicalDatatype>
+<domain>6947CD2C-D354-467A-09BB-C75715ACF029</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2166EF0F-9D05-EC5F-6FB9-AD51FADF88AF" name="foglalas_tanfolyam_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>5402A4D1-0C50-11C4-C0C6-C3285EE87AD0</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DD46FB1-3501-F996-737C-6921FADB3C39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9200E2C7-D9E8-66A9-FD1B-B922185524E2" name="foglalas_ugyfel_FK">
+<createdBy>angelid</createdBy>
+<createdTime>2018-12-10 17:56:10 UTC</createdTime>
+<generatorID>D82A0B76-A7E2-6443-8772-87F6E89446E4</generatorID>
+<ownerDesignName>cramhead</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC1B156B-F852-76DC-738E-A459CDBF6D95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
