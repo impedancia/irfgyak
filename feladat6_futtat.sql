@@ -1,5 +1,5 @@
 select sum(egyenleg) from bankszamla;
---1904308
+
 select * from bankszamla;
 set serveroutput on
 begin

@@ -13,6 +13,7 @@ create or replace PROCEDURE JUTALOM
         where tulajdonos not in ('Kincstar','Bolt','Munkahely');
     pragma exception_init(atutalas_exception,-20001);
 BEGIN
+    counter :=0;
     FOR dolgozo_rec in dolgozoCursor
     LOOP
         hiba := true;
