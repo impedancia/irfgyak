@@ -1,0 +1,257 @@
+
+Table BANKSZAMLA dropped.
+
+
+Table BANKSZAMLA created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+SUM(EGYENLEG)
+-------------
+      1904250
+
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+
+
+PL/SQL procedure successfully completed.
+
+
+Table BANKSZAMLA dropped.
+
+
+Table BANKSZAMLA created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+SUM(EGYENLEG)
+-------------
+      1904250
+
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+szükséges update-ek száma: 28
+
+
+PL/SQL procedure successfully completed.
+
+
+SUM(EGYENLEG)
+-------------
+      1904250
+
