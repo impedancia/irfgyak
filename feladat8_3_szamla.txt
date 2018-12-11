@@ -1,0 +1,73 @@
+*** Feladat szövege
+
+Számla eloállítása (leírás 16. old.) egyszerusítés: törölt résztvevo is szerepel a számlán
+ (utólag majd jóváírással rendezzük)
+
+*** Lekérdezés vagy program
+
+with sorok as (select u.nev, u.cim, u.kapcsolattarto, t.kod kurzus, tt.nev kurzus_nev, t.kezdodatum, t.vegedatum, f.resztvevo, ta.ar
+    from foglalas f, ugyfel u, tanfolyam t, tanfolyam_tipus tt, tanfolyam_ar ta
+    where f.ugyfel_nev = u.nev
+    and f.tanfolyam_kod = t.kod
+    and tt.kod = t.tanfolyam_tipus_kod
+    and ta.tanfolyam_tipus_kod = t.tanfolyam_tipus_kod
+    and ta.ervenyes = (select max(x.ervenyes) from tanfolyam_ar x where x.tanfolyam_tipus_kod = t.tanfolyam_tipus_kod and x.ervenyes <= t.kezdodatum)
+    order by u.nev, t.kod, f.resztvevo)
+select s1.*, s2.*
+from sorok s1, (select nev, kurzus, sum(ar) netto, sum(ar)*0.27 afa_27, sum(ar)*1.27 brutto from sorok group by nev, kurzus) s2
+where s1.nev = s2.nev
+and s1.kurzus = s2.kurzus
+
+*** A futtatás eredménye 
+
+Ugyfel1	Cim1	Kapcs1	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Lakatos Andrea	30000	Ugyfel1	CSTJAN1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Lakatos Elek	30000	Ugyfel1	CSTJAN1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Lakatos Gergely	30000	Ugyfel1	CSTJAN1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Lakatos Jakab	30000	Ugyfel1	CSTJAN1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Lakatos Tibor	30000	Ugyfel1	CSTJAN1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Alma	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Ambrus	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Attila	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Endre	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Imre	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	EXSJAN1	Exportáljunk a sikerért	18-JAN-15	18-JAN-19	Lakatos Viola	40000	Ugyfel1	EXSJAN1	240000	64800	304800
+Ugyfel1	Cim1	Kapcs1	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Lakatos Andrea	50000	Ugyfel1	KZSFEB1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Lakatos Elek	50000	Ugyfel1	KZSFEB1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Lakatos Endre	50000	Ugyfel1	KZSFEB1	150000	40500	190500
+Ugyfel1	Cim1	Kapcs1	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Lakatos Andrea	30000	Ugyfel1	STSFEB1	90000	24300	114300
+Ugyfel1	Cim1	Kapcs1	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Lakatos Gergely	30000	Ugyfel1	STSFEB1	90000	24300	114300
+Ugyfel1	Cim1	Kapcs1	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Lakatos Imre	30000	Ugyfel1	STSFEB1	90000	24300	114300
+Ugyfel2	Cim2	Kapcs2	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Kiss Andrea	30000	Ugyfel2	CSTJAN1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Kiss Elek	30000	Ugyfel2	CSTJAN1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Kiss Gergely	30000	Ugyfel2	CSTJAN1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Kiss Jakab	30000	Ugyfel2	CSTJAN1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Kiss Tibor	30000	Ugyfel2	CSTJAN1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN2	Cégek stratégiai Tervezése	18-JAN-20	18-JAN-24	Kiss Alma	30000	Ugyfel2	CSTJAN2	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN2	Cégek stratégiai Tervezése	18-JAN-20	18-JAN-24	Kiss Dalma	30000	Ugyfel2	CSTJAN2	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN2	Cégek stratégiai Tervezése	18-JAN-20	18-JAN-24	Kiss Endre	30000	Ugyfel2	CSTJAN2	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN2	Cégek stratégiai Tervezése	18-JAN-20	18-JAN-24	Kiss Gizi	30000	Ugyfel2	CSTJAN2	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	CSTJAN2	Cégek stratégiai Tervezése	18-JAN-20	18-JAN-24	Kiss Viola	30000	Ugyfel2	CSTJAN2	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	EXSFEB1	Exportáljunk a sikerért	18-FEB-15	18-FEB-19	Kiss Ambrus	45000	Ugyfel2	EXSFEB1	225000	60750	285750
+Ugyfel2	Cim2	Kapcs2	EXSFEB1	Exportáljunk a sikerért	18-FEB-15	18-FEB-19	Kiss Dalma	45000	Ugyfel2	EXSFEB1	225000	60750	285750
+Ugyfel2	Cim2	Kapcs2	EXSFEB1	Exportáljunk a sikerért	18-FEB-15	18-FEB-19	Kiss Endre	45000	Ugyfel2	EXSFEB1	225000	60750	285750
+Ugyfel2	Cim2	Kapcs2	EXSFEB1	Exportáljunk a sikerért	18-FEB-15	18-FEB-19	Kiss Gizi	45000	Ugyfel2	EXSFEB1	225000	60750	285750
+Ugyfel2	Cim2	Kapcs2	EXSFEB1	Exportáljunk a sikerért	18-FEB-15	18-FEB-19	Kiss Jakab	45000	Ugyfel2	EXSFEB1	225000	60750	285750
+Ugyfel2	Cim2	Kapcs2	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Kiss Andrea	50000	Ugyfel2	KZSFEB1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Kiss Elek	50000	Ugyfel2	KZSFEB1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	KZSFEB1	Közszereplés	18-FEB-10	18-FEB-14	Kiss Gergely	50000	Ugyfel2	KZSFEB1	150000	40500	190500
+Ugyfel2	Cim2	Kapcs2	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Kiss Andrea	30000	Ugyfel2	STSFEB1	90000	24300	114300
+Ugyfel2	Cim2	Kapcs2	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Kiss Elek	30000	Ugyfel2	STSFEB1	90000	24300	114300
+Ugyfel2	Cim2	Kapcs2	STSFEB1	Stratégiai tervezés	18-FEB-20	18-FEB-24	Kiss Gergely	30000	Ugyfel2	STSFEB1	90000	24300	114300
+Ugyfel3	Cim3	Kapcs3	CSTFEB1	Cégek stratégiai Tervezése	18-FEB-15	18-FEB-19	Nagy Alma	35000	Ugyfel3	CSTFEB1	175000	47250	222250
+Ugyfel3	Cim3	Kapcs3	CSTFEB1	Cégek stratégiai Tervezése	18-FEB-15	18-FEB-19	Nagy Elek	35000	Ugyfel3	CSTFEB1	175000	47250	222250
+Ugyfel3	Cim3	Kapcs3	CSTFEB1	Cégek stratégiai Tervezése	18-FEB-15	18-FEB-19	Nagy Endre	35000	Ugyfel3	CSTFEB1	175000	47250	222250
+Ugyfel3	Cim3	Kapcs3	CSTFEB1	Cégek stratégiai Tervezése	18-FEB-15	18-FEB-19	Nagy Gergely	35000	Ugyfel3	CSTFEB1	175000	47250	222250
+Ugyfel3	Cim3	Kapcs3	CSTFEB1	Cégek stratégiai Tervezése	18-FEB-15	18-FEB-19	Nagy Tibor	35000	Ugyfel3	CSTFEB1	175000	47250	222250
+Ugyfel3	Cim3	Kapcs3	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Nagy Andrea	30000	Ugyfel3	CSTJAN1	60000	16200	76200
+Ugyfel3	Cim3	Kapcs3	CSTJAN1	Cégek stratégiai Tervezése	18-JAN-15	18-JAN-19	Nagy Jakab	30000	Ugyfel3	CSTJAN1	60000	16200	76200
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Elek	25000	Ugyfel3	STSJAN1	150000	40500	190500
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Gergely	25000	Ugyfel3	STSJAN1	150000	40500	190500
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Gizi	25000	Ugyfel3	STSJAN1	150000	40500	190500
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Imre	25000	Ugyfel3	STSJAN1	150000	40500	190500
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Lajos	25000	Ugyfel3	STSJAN1	150000	40500	190500
+Ugyfel3	Cim3	Kapcs3	STSJAN1	Stratégiai tervezés	18-JAN-20	18-JAN-24	Nagy Tibor	25000	Ugyfel3	STSJAN1	150000	40500	190500
