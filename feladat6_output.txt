@@ -1,128 +1,5 @@
 
-Table BANKSZAMLA dropped.
-
-
-Table BANKSZAMLA created.
-
-
-1 row inserted.
-
-
-1 row inserted.
-
-
-1 row inserted.
-
-
-Commit complete.
-
-
-SUM(EGYENLEG)
--------------
-      1904250
-
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-
-
-PL/SQL procedure successfully completed.
+Procedure JUTALOM compiled
 
 
 Table BANKSZAMLA dropped.
@@ -143,109 +20,112 @@ Table BANKSZAMLA created.
 Commit complete.
 
 
+Trigger BANKSZAMLA_TRG compiled
+
+
 SUM(EGYENLEG)
 -------------
       1904250
 
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
-szükséges update-ek száma: 28
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 37
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 35
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 45
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 29
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 32
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 44
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 35
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 42
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 34
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 32
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 34
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 48
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 46
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 47
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 34
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 45
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 37
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 30
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 30
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 50
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 34
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 32
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 37
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 47
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 38
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 46
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 46
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 30
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 33
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 46
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 46
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 41
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 48
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 43
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 42
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 36
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 35
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 37
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 39
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 40
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 31
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 32
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 32
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 37
+szÃ¼ksÃ©ges update-ek szÃ¡ma: 42
 
 
 PL/SQL procedure successfully completed.
@@ -254,4 +134,30 @@ PL/SQL procedure successfully completed.
 SUM(EGYENLEG)
 -------------
       1904250
+
+
+TULAJDONOS                       EGYENLEG
+------------------------------ ----------
+SMITH                                8099
+ALLEN                               16099
+WARD                                12599
+JONES                               29849
+MARTIN                              12599
+BLAKE                               42599
+CLARK                               24599
+SCOTT                               30099
+KING                                50099
+TURNER                              15099
+ADAMS                               11099
+
+TULAJDONOS                       EGYENLEG
+------------------------------ ----------
+JAMES                                9599
+FORD                                30099
+MILLER                              13099
+Kincstar                          1000000
+Munkahely                          498614
+Bolt                               100000
+
+17 rows selected. 
 
