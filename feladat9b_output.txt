@@ -1,0 +1,14 @@
+
+Function KTG_OSSZEG compiled
+
+
+Procedure MIN_KOLTSEG compiled
+
+San Francisco -> Denver: 1000
+San Francisco -> New York: 3500
+San Francisco -> Dallas: 1500
+San Francisco -> Chicago: 2100
+
+
+PL/SQL procedure successfully completed.
+

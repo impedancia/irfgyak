@@ -1,0 +1,15 @@
+
+Procedure NOT_SERIAL compiled
+
+
+Error starting at line : 21 in command -
+BEGIN not_serial(); END;
+Error report -
+ORA-08177: ehhez a tranzakcióhoz nem lehet sorbarendezni a hozzáférést
+ORA-06512: a(z) "E9QZF1.NOT_SERIAL", helyen a(z) 14. sornál
+ORA-06512: a(z) helyen a(z) 1. sornál
+08177. 00000 -  "can't serialize access for this transaction"
+*Cause:    Encountered data changed by an operation that occurred after
+           the start of this serializable transaction.
+*Action:   In read/write transactions, retry the intended operation or
+           transaction.
