@@ -1,0 +1,97 @@
+*** Feladat szövege
+
+7/3
+Írjunk meg egy lock_test nevû procedúrát, amelyik LOCK TABLE utasítások kiadásával leteszteli, 
+hogy két tranzakció a megadott két zárolási módban zárolhatja-e ugyanazt a táblát.
+A második tranzakació egy autonóm tranzakcióként futó lokális procedúrában legyen megvalósítva.
+A lehetséges zárolási módok: RS, RX, S, SRX, X.
+A procedúra siker esetén írja ki, hogy OK, egyébként pedig, hogy NEM.
+
+create or replace procedure lock_test(p1 varchar2, p2 varchar2) is ...
+Tesztelés:
+set serveroutput on
+execute lock_test('RX', 'S');
+
+
+*** Lekérdezés vagy program
+
+create or replace procedure lock_test(p1 varchar2, p2 varchar2) is
+    base_sql varchar2(1000);
+    base2_sql varchar2(1000);
+    mode1_sql varchar2(128);
+    mode2_sql varchar2(128);
+    exec_sql varchar2(128);
+    FUNCTION conv(p varchar2) RETURN varchar2 is
+        mode_sql varchar2(128);
+    BEGIN
+        case p
+            when 'RS' THEN mode_sql := 'ROW SHARE';
+            when 'RX' THEN mode_sql := 'ROW EXCLUSIVE';
+            when 'S' THEN mode_sql := 'SHARE';
+            when 'SRX' THEN mode_sql := 'SHARE ROW EXCLUSIVE';
+            when 'X' THEN mode_sql := 'EXCLUSIVE';
+            ELSE raise_application_error(-20000 , 'érvénytelen mód'); 
+        end case; 
+        return mode_sql;
+    END;
+    PROCEDURE another_lock(mode_sql varchar2) is
+    PRAGMA AUTONOMOUS_TRANSACTION;
+    BEGIN
+        --EXECUTE IMMEDIATE  base2_sql USING mode_sql;
+        dbms_output.Put_line('sql2: ' || utl_lms.format_message(base_sql, mode_sql));
+        EXECUTE IMMEDIATE  utl_lms.format_message(base_sql, mode_sql);
+        commit;
+    END;
+BEGIN
+    base2_sql := 'LOCK TABLE dolgozo IN :1 MODE';
+    base_sql := 'LOCK TABLE dolgozo IN %s MODE';    
+    mode1_sql := conv(p1);
+    mode2_sql := conv(p2);
+    
+    exec_sql := utl_lms.format_message(base_sql, mode1_sql);
+    dbms_output.Put_line('mode1_sql: ' || mode1_sql);
+    dbms_output.Put_line('mode2_sql: ' || mode2_sql);
+    dbms_output.Put_line('sql1: ' || exec_sql);
+    --EXECUTE IMMEDIATE base2_sql USING mode1_sql;
+    EXECUTE IMMEDIATE exec_sql;
+    begin
+        
+            another_lock(mode2_sql);    
+            commit;
+        dbms_output.put_line('OK');
+    exception
+        when others then
+            dbms_output.put_line('NEM');
+            dbms_output.put_line(sqlcode||' -- '||sqlerrm);
+    end; 
+    rollback;
+END;
+/
+set serveroutput on;
+execute lock_test('X', 'S');
+execute lock_test('RS', 'S');
+
+
+*** A futtatás eredménye 
+
+Procedure LOCK_TEST compiled
+
+mode1_sql: EXCLUSIVE
+mode2_sql: SHARE
+sql: LOCK TABLE dolgozo IN EXCLUSIVE MODE
+sql: LOCK TABLE dolgozo IN SHARE MODE
+NEM
+-60 -- ORA-00060: erõforrásra várakozás közben holtpont jött létre
+
+
+PL/SQL procedure successfully completed.
+
+mode1_sql: ROW SHARE
+mode2_sql: SHARE
+sql: LOCK TABLE dolgozo IN ROW SHARE MODE
+sql: LOCK TABLE dolgozo IN SHARE MODE
+OK
+
+
+PL/SQL procedure successfully completed.
+

@@ -1,0 +1,19 @@
+*** Feladat szövege
+
+Hány SQL ablakot (sessiont) tudunk egyszerre megnyitni?
+Mennyi a számunkra engedélyezett maximális kapcsolódási idõ?
+Hány sikertelen bejelentkezést enged az adatbáziskezelõ a számunkra? 
+
+*** Lekérdezés vagy program
+
+select p.resource_name, p.limit
+from dba_profiles p, dba_users u
+where u.profile= p.profile
+and u.username = (select user from dual)
+and p.resource_name in ('SESSIONS_PER_USER', 'CONNECT_TIME', 'FAILED_LOGIN_ATTEMPTS')
+
+*** A futtatás eredménye 
+
+SESSIONS_PER_USER	10
+CONNECT_TIME	180
+FAILED_LOGIN_ATTEMPTS	8

@@ -1,0 +1,49 @@
+*** Feladat szövege
+
+Írjunk meg egy PL/SQL procedúrát, amelyik a paraméterül kapott városra kiírja, hogy
+onnan mely városokba lehet eljutni. Az output formátuma valami ilyesmi legyen: 
+Denver -> New York
+Denver -> Chicago
+...
+CREATE OR REPLACE PROCEDURE hova(p_honnan varchar2) IS
+...
+set serveroutput on;
+execute hova('San Francisco');
+
+*** Lekérdezés vagy program
+
+CREATE OR REPLACE PROCEDURE hova(p_honnan varchar2) AS
+BEGIN
+  DECLARE
+    CURSOR jarat_cursor IS
+      SELECT DISTINCT p_honnan || ' -> ' || hova FROM jaratok
+      WHERE hova <> p_honnan
+      START WITH honnan = p_honnan
+      CONNECT BY NOCYCLE PRIOR hova = honnan;
+      sor varchar2(32767);
+  BEGIN
+    OPEN jarat_cursor;
+    LOOP
+      FETCH jarat_cursor INTO sor;
+      EXIT WHEN jarat_cursor%NOTFOUND;
+      dbms_output.put_line(sor);
+    END LOOP;
+    CLOSE jarat_cursor;
+  END;
+END;
+/
+set serveroutput on;
+execute hova('San Francisco');
+
+*** A futtatás eredménye 
+
+Procedure HOVA compiled
+
+San Francisco -> Denver
+San Francisco -> New York
+San Francisco -> Chicago
+San Francisco -> Dallas
+
+
+PL/SQL procedure successfully completed.
+

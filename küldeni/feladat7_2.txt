@@ -1,0 +1,55 @@
+*** Feladat szövege
+
+7/2
+Adjunk meg egy olyan ütemezést két tranzakcióra, amely nem sorbarendezhetõ.
+Mindezt egy NOT_SERIAL nevû procedúra megírásával érjük el, amely egy autonóm tranzakcióként 
+futó lokális procedúrát (vagyis nem tárolt procedúrát) hív meg.
+Ha jól írtuk meg, akkor a procedúra a következõ hibaüzenetet fogja kiírni:
+"ORA-08177: can't serialize access for this transaction"
+
+create or replace procedure not_serial is ...
+Tesztelés:
+set serveroutput on
+execute not_serial();
+
+*** Lekérdezés vagy program
+
+create or replace PROCEDURE NOT_SERIAL IS  
+    PROCEDURE UPDATE_DOLGOZO1 AS
+    PRAGMA AUTONOMOUS_TRANSACTION;
+    BEGIN
+        UPDATE dolgozo
+        SET fizetes=fizetes*2
+        WHERE dkod=1;
+        COMMIT;
+    END;
+BEGIN
+    set transaction isolation level serializable;
+    UPDATE_DOLGOZO1;
+    
+    UPDATE dolgozo
+    SET fizetes=fizetes*2 
+    WHERE dkod=1;
+END;
+
+/
+set serveroutput on
+execute not_serial();
+
+*** A futtatás eredménye 
+
+
+Procedure NOT_SERIAL compiled
+
+
+Error starting at line : 21 in command -
+BEGIN not_serial(); END;
+Error report -
+ORA-08177: ehhez a tranzakcióhoz nem lehet sorbarendezni a hozzáférést
+ORA-06512: a(z) "E9QZF1.NOT_SERIAL", helyen a(z) 14. sornál
+ORA-06512: a(z) helyen a(z) 1. sornál
+08177. 00000 -  "can't serialize access for this transaction"
+*Cause:    Encountered data changed by an operation that occurred after
+           the start of this serializable transaction.
+*Action:   In read/write transactions, retry the intended operation or
+           transaction.

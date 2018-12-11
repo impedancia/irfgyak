@@ -1,0 +1,74 @@
+*** Feladat szövege
+
+7/1
+Adjuk meg két tranzakciónak egy olyan ütemezését, hogy DEADLOCK alakuljon ki.
+Adjunk meg két konkrét SQL utasítássorozatot (két SqlDeveloper példány futtatásának segítségével) 
+úgy, hogy DEADLOCK alakuljon ki, és ezt írja is ki a rendszer hibaüzenetként.
+Valami ilyesmit kell kiírnia:
+"ORA-60: deadlock detected while waiting for resource"
+
+
+*** Lekérdezés vagy program
+--session1
+declare
+    dolg dolgozo%rowtype;
+    dolg2 dolgozo%rowtype;
+    dp dept%rowtype;
+begin
+
+for i in 1..1000000
+loop
+    select * into dolg from dolgozo where dkod = 1 for update;
+
+    select * into dolg2 from dolgozo where dkod = 2 for update;
+    
+    rollback;
+end  loop;  
+end;
+
+--------------
+---session2
+
+declare
+    dolg dolgozo%rowtype;
+    dolg2 dolgozo%rowtype;
+    dp dept%rowtype;
+begin
+
+for i in 1..1000000
+loop
+    select * into dolg2 from dolgozo where dkod = 2 for update;
+
+    select * into dolg from dolgozo where dkod = 1 for update;    
+    rollback;
+end  loop;  
+end;
+
+
+
+*** A futtatás eredménye 
+
+
+
+Error starting at line : 1 in command -
+declare
+    dolg dolgozo%rowtype;
+    dolg2 dolgozo%rowtype;
+    dp dept%rowtype;
+begin
+
+for i in 1..1000000
+loop
+    select * into dolg2 from dolgozo where dkod = 2 for update;
+
+    select * into dolg from dolgozo where dkod = 1 for update;    
+    rollback;
+end  loop;  
+end;
+Error report -
+ORA-00060: erõforrásra várakozás közben holtpont jött létre
+ORA-06512: a(z) helyen a(z) 11. sornál
+00060. 00000 -  "deadlock detected while waiting for resource"
+*Cause:    Transactions deadlocked one another while waiting for resources.
+*Action:   Look at the trace file to see the transactions and resources
+           involved. Retry if necessary.

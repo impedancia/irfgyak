@@ -1,0 +1,275 @@
+*** Feladat szövege
+
+ A fenti környezetben készítsük el a JUTALOM nevû procedúrát, amely az egyenlegeket
+   módosítja annak megfelelõen, hogy a munkahely minden dolgozónak egy adott összegû jutalmat ad.
+   Minden dolgozó egyenlegét megnöveli az adott összeggel, a Munkahely egyenlegét pedig csökkenti.
+   A procedúrának mindenképpen módosítania kell minden szükséges egyenleget, függetlenül attól, hogy
+   mikor fordulnak elõ véletlen hibák a fenti trigger miatt. Ezeket az esetlegesen felmerülõ hibákat
+   hibakezeléssel és tranzakció kezelõ utasítások (COMMIT/ROLLBACK) alkalmazásával kell orvosolnia.
+   A procedúra a lefutása után írja ki, hogy összesen hány UPDATE mûveletet hajtott végre.
+   (A sikeres és sikertelen mûveleteket is számoljuk bele.)
+
+   CREATE OR REPLACE PROCEDURE jutalom(p_osszeg number) IS
+
+   Futtassuk le ciklusban 99-szer a jutalom(1)-et, majd ellenõrizzük, hogy jók-e az egyenlegek.
+   A ciklusban való futtatás után az új egyenlegeket is el kell küldeni.
+
+
+*** Lekérdezés vagy program
+
+create or replace PROCEDURE JUTALOM 
+(
+  p_osszeg IN NUMBER 
+) AS 
+ PRAGMA AUTONOMOUS_TRANSACTION;
+    dolgozo_count number;
+    counter NUMBER;
+    hiba BOOLEAN;
+    atutalas_exception EXCEPTION;
+    cursor dolgozoCursor is
+        SELECT *
+        FROM bankszamla
+        where tulajdonos not in ('Kincstar','Bolt','Munkahely');
+    pragma exception_init(atutalas_exception,-20001);
+BEGIN
+    counter :=0;
+    FOR dolgozo_rec in dolgozoCursor
+    LOOP
+        hiba := true;
+        while hiba = true 
+        loop
+            begin
+                begin
+                    counter := counter + 1;
+                    update bankszamla set egyenleg = egyenleg + p_osszeg where tulajdonos = dolgozo_rec.tulajdonos;
+                    hiba := false;
+                exception
+                    when atutalas_exception then
+                        hiba := true;
+                        rollback;
+                end;
+                
+                if hiba = false then
+                    begin
+                        counter := counter + 1;
+                        update bankszamla set egyenleg = egyenleg - p_osszeg where tulajdonos = 'Munkahely';
+                        hiba := false;
+                    exception
+                        when atutalas_exception then
+                            hiba := true;
+                            rollback;
+                    end;
+                end if;        
+                if hiba = false then
+                    commit;
+                end if;
+         end;       
+        end loop;   
+    END LOOP;
+    dbms_output.Put_line('szükséges update-ek száma: ' || to_char(counter));
+END JUTALOM;
+
+/
+
+DROP TABLE bankszamla;
+
+/
+
+CREATE TABLE bankszamla(tulajdonos, egyenleg) AS
+SELECT CAST(dnev AS VARCHAR(30)), CAST(fizetes*10 AS NUMBER) FROM nikovits.dolgozo;
+INSERT INTO bankszamla VALUES('Kincstar', 1000000);
+INSERT INTO bankszamla VALUES('Munkahely', 500000);
+INSERT INTO bankszamla VALUES('Bolt', 100000);
+COMMIT;
+
+/
+
+CREATE OR REPLACE TRIGGER bankszamla_trg
+  BEFORE UPDATE ON bankszamla
+  FOR EACH ROW
+DECLARE
+  v_szam INTEGER;
+BEGIN
+  v_szam := round(dbms_random.value(1,100));
+  IF mod(v_szam, 5) = 0 THEN raise_application_error('-20001', 'Hiba'); END IF;
+END;
+
+/
+-- Ellenõrizzük a kezdeti egyenlegek összegét. Ennek nem szabad változnia az átutalások során.
+SELECT sum(egyenleg) FROM bankszamla;     
+/
+set serveroutput on
+begin
+    for i in 1..99 loop
+       jutalom(1);
+    end loop;
+end;    
+/
+SELECT sum(egyenleg) FROM bankszamla;     
+select * from bankszamla;
+
+*** A futtatás eredménye 
+
+
+Procedure JUTALOM compiled
+
+
+Table BANKSZAMLA dropped.
+
+
+Table BANKSZAMLA created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Commit complete.
+
+
+Trigger BANKSZAMLA_TRG compiled
+
+
+SUM(EGYENLEG)
+-------------
+      1904250
+
+szükséges update-ek száma: 39
+szükséges update-ek száma: 36
+szükséges update-ek száma: 37
+szükséges update-ek száma: 35
+szükséges update-ek száma: 36
+szükséges update-ek száma: 38
+szükséges update-ek száma: 45
+szükséges update-ek száma: 38
+szükséges update-ek száma: 39
+szükséges update-ek száma: 40
+szükséges update-ek száma: 39
+szükséges update-ek száma: 43
+szükséges update-ek száma: 29
+szükséges update-ek száma: 40
+szükséges update-ek száma: 32
+szükséges update-ek száma: 40
+szükséges update-ek száma: 36
+szükséges update-ek száma: 40
+szükséges update-ek száma: 33
+szükséges update-ek száma: 44
+szükséges update-ek száma: 36
+szükséges update-ek száma: 40
+szükséges update-ek száma: 35
+szükséges update-ek száma: 42
+szükséges update-ek száma: 43
+szükséges update-ek száma: 38
+szükséges update-ek száma: 39
+szükséges update-ek száma: 41
+szükséges update-ek száma: 34
+szükséges update-ek száma: 38
+szükséges update-ek száma: 40
+szükséges update-ek száma: 32
+szükséges update-ek száma: 34
+szükséges update-ek száma: 48
+szükséges update-ek száma: 39
+szükséges update-ek száma: 46
+szükséges update-ek száma: 47
+szükséges update-ek száma: 33
+szükséges update-ek száma: 36
+szükséges update-ek száma: 34
+szükséges update-ek száma: 41
+szükséges update-ek száma: 45
+szükséges update-ek száma: 41
+szükséges update-ek száma: 37
+szükséges update-ek száma: 40
+szükséges update-ek száma: 30
+szükséges update-ek száma: 38
+szükséges update-ek száma: 30
+szükséges update-ek száma: 39
+szükséges update-ek száma: 39
+szükséges update-ek száma: 38
+szükséges update-ek száma: 38
+szükséges update-ek száma: 40
+szükséges update-ek száma: 33
+szükséges update-ek száma: 50
+szükséges update-ek száma: 39
+szükséges update-ek száma: 34
+szükséges update-ek száma: 39
+szükséges update-ek száma: 32
+szükséges update-ek száma: 37
+szükséges update-ek száma: 40
+szükséges update-ek száma: 41
+szükséges update-ek száma: 41
+szükséges update-ek száma: 40
+szükséges update-ek száma: 38
+szükséges update-ek száma: 33
+szükséges update-ek száma: 47
+szükséges update-ek száma: 38
+szükséges update-ek száma: 33
+szükséges update-ek száma: 40
+szükséges update-ek száma: 46
+szükséges update-ek száma: 46
+szükséges update-ek száma: 30
+szükséges update-ek száma: 33
+szükséges update-ek száma: 33
+szükséges update-ek száma: 46
+szükséges update-ek száma: 40
+szükséges update-ek száma: 41
+szükséges update-ek száma: 43
+szükséges update-ek száma: 46
+szükséges update-ek száma: 43
+szükséges update-ek száma: 39
+szükséges update-ek száma: 43
+szükséges update-ek száma: 41
+szükséges update-ek száma: 39
+szükséges update-ek száma: 39
+szükséges update-ek száma: 48
+szükséges update-ek száma: 43
+szükséges update-ek száma: 42
+szükséges update-ek száma: 36
+szükséges update-ek száma: 35
+szükséges update-ek száma: 37
+szükséges update-ek száma: 39
+szükséges update-ek száma: 40
+szükséges update-ek száma: 31
+szükséges update-ek száma: 32
+szükséges update-ek száma: 32
+szükséges update-ek száma: 37
+szükséges update-ek száma: 42
+
+
+PL/SQL procedure successfully completed.
+
+
+SUM(EGYENLEG)
+-------------
+      1904250
+
+
+TULAJDONOS                       EGYENLEG
+------------------------------ ----------
+SMITH                                8099
+ALLEN                               16099
+WARD                                12599
+JONES                               29849
+MARTIN                              12599
+BLAKE                               42599
+CLARK                               24599
+SCOTT                               30099
+KING                                50099
+TURNER                              15099
+ADAMS                               11099
+
+TULAJDONOS                       EGYENLEG
+------------------------------ ----------
+JAMES                                9599
+FORD                                30099
+MILLER                              13099
+Kincstar                          1000000
+Munkahely                          498614
+Bolt                               100000
+
+17 rows selected. 
+
