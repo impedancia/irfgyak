@@ -1,0 +1,6 @@
+amikor futtatod, akkor kell a set serveroutput on;
+
+így kell lefuttatni
+
+set serveroutput on;
+execute zh_min_koltseg('F')
