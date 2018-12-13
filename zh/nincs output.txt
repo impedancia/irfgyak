@@ -4,3 +4,7 @@ amikor futtatod, akkor kell a set serveroutput on;
 
 set serveroutput on;
 execute zh_min_koltseg('F')
+
+
+ezekenek a soroknak lesz outputja
+      dbms_output.put_line(v_honnan || ' -> ' || v_hova || ': ' || v_legkisebb_ktg);
